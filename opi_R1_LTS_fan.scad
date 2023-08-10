@@ -16,7 +16,7 @@ mirror([1,0,0]) {
 
     difference() {
         translate([-2.5,-2.5,0]) {
-            linear_extrude(3, center=false) 
+            linear_extrude(2, center=false) 
                 polygon(polyRound(radiiPoints, 50));
         }
 
@@ -31,7 +31,7 @@ mirror([1,0,0]) {
 }
 
 module supportAndPin() {
-    height = 21;
+    height = 17;
     cylinder(h=height, d=5);
     cylinder(h=height+7, d=2.5);
 }
