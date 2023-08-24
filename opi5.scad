@@ -19,12 +19,12 @@ translate([0,0,-face.z]) {
             //faceplate
             difference() {
                 linear_extrude(face.z) square([face.x, face.y]);
-                screwHoles();
+                #screwHoles();
             }
         }
         
         translate([7.5,9.25,0]) boardMask();
-        #translate([0,3.5,+1]) linear_extrude(1+eps) square([65,15]);
+        translate([0,3.5,+1]) linear_extrude(1+eps) square([65,15]);
     }
 }
 
@@ -34,7 +34,6 @@ module screwHoles() {
     //fixing screw holes
     translate([0, face.y / 2, -eps / 2]) {
         translate([holeOffset, 0, 0]) {
-            //screwHole(M5);
             cylinder(h=face.z+eps, d1=7, d2=4);
         }
         translate([face.x - holeOffset, 0, 0]) {

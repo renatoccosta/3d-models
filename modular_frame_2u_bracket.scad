@@ -2,7 +2,7 @@ eps = 1;
 
 $fn=50;
 _1u = 44;
-face = [33, 2 * _1u, 2];
+face = [43, 2 * _1u, 2];
 screwHoleDim = [9.5,6];
 holeRadius = 3.25;
 holePosX = 10;
