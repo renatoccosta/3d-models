@@ -15,8 +15,8 @@ supportThikness = 2;
 
 difference() {
     translate([-margins.x, -margins.y, 0]) 
-//        faceplate(2);
-        linear_extrude(faceZ) square([_1u*2,_1u]);
+        faceplate(2);
+//        linear_extrude(faceZ) square([_1u*2,_1u]);
     for(i=[0:1:slotNum-1]) {
         translate([(_1u*2-slotD.x)/2,slotD.y*i+supportThikness,-eps/2]) 
             slotMask([slotD.x,slotD.y-supportThikness]);
