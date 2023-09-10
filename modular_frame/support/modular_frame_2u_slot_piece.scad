@@ -1,9 +1,8 @@
+include <../modules/base_variables.scad>
 use <threads.scad>
 
 eps = 1;
 
-$fn=50;
-_1u = 44;
 face = [_1u*3, 11, 2];
 screwR = 2.25;
 

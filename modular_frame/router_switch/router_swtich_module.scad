@@ -1,14 +1,14 @@
-use <faceplate_2u.scad>
-use <opi_r1_lts_eth.scad>
+include <../modules/base_variables.scad>
+use <../modules/faceplate_2u.scad>
+use <../opi_r1/opi_r1_lts_eth.scad>
 use <switch_8p.scad>
 
-faceZ = 2;
 margins=[0,11];
 switchPadding=[22,4];
 routerPadding=[28,32];
 
 difference() {
-    translate([-margins.x, -margins.y, -faceZ]) 
+    translate([-margins.x, -margins.y, -thikness]) 
         faceplate(4);
     pad(routerPadding) 
         routerMask();    

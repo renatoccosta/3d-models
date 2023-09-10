@@ -1,9 +1,9 @@
+include <base_variables.scad>
+
 faceplate(1);
 
 module faceplate(slots=1) {
-    $fn=50;
     eps = 1;
-    _1u = 44;
     face = [slots * _1u, _1u * 2, 2];
     holeOffset = 5.5;
 
@@ -18,7 +18,4 @@ module faceplate(slots=1) {
             }  
         }
     }
-}
-
-module screwHoles() {
 }

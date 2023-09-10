@@ -1,14 +1,9 @@
 include <polyround.scad>
+include <../modules/base_variables.scad>
 
 eps = 1;
-
-$fn=50;
-_1u = 44;
-
 face = [2 * _1u, _1u, 2];
-
 holeOffset = 5.5;
-
 marginLeftRight = 2 * holeOffset;
 marginTopBottom = 5;
 

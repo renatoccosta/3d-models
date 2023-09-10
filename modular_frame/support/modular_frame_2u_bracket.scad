@@ -1,7 +1,5 @@
-eps = 1;
+include <../modules/base_variables.scad>
 
-$fn=50;
-_1u = 44;
 face = [43, 2 * _1u, 2];
 screwHoleDim = [9.5,6];
 holeRadius = 3.25;

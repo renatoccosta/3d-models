@@ -1,7 +1,5 @@
-eps = 1;
+include <../modules/base_variables.scad>
 
-$fn=50;
-_1u = 44;
 face = [20, 2*_1u, 2];
 
 rodHoleR = 3.25;

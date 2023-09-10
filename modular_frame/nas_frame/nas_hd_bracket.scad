@@ -1,8 +1,7 @@
 include <polyround.scad>
+include <../modules/base_variables.scad>
 
-$fn=50;
 eps = 1;
-_1u=44;
 
 face=[2*_1u, 16.5, 2];
 hardDriveD=[70,100,10];

@@ -1,4 +1,4 @@
-use <faceplate_2u.scad>
+use <../modules/faceplate_2u.scad>
 include <polyround.scad>
 
 $fn=50;
