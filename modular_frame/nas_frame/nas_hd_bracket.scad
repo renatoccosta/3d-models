@@ -3,7 +3,7 @@ include <../modules/base_variables.scad>
 
 eps = 1;
 
-face=[2*_1u, 16.5, 2];
+face=[2*_1u, 16.5, thikness];
 hardDriveD=[70,100,10];
 carvingD=[50,3];
 carvingP=[[0,0,0],

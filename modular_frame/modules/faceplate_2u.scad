@@ -18,4 +18,8 @@ module faceplate(slots=1) {
             }  
         }
     }
+    
+    #%translate([0,holeOffset*2,-eps/2]) 
+        linear_extrude(thikness+eps) 
+            square([face.x,face.y-4*holeOffset]);
 }

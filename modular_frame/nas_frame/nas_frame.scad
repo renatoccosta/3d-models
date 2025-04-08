@@ -1,19 +1,25 @@
-use <../modules/faceplate_2u.scad>
 include <polyround.scad>
 include <../modules/base_variables.scad>
+use <../modules/faceplate_2u.scad>
+use <./nas_cabinet2.scad>
 
-frame();
 
-module frame() {
-    canvasD = [72+2*thikness,2*_1u-2*margins.y-2*thikness];
+canvasD = [74,2*_1u - 2*margins.y];
+frame(canvasD);
+    
+translate([(_1u*2-canvasD.x)/2,margins.y,0]) 
+    cabinet([canvasD.x-2*thikness,canvasD.y-2*thikness, 65]);
 
+module frame(canvasD) {
     difference() {
         faceplate(2);
         translate([(_1u*2-canvasD.x)/2, (_1u*2-canvasD.y)/2, -eps/2]) 
             linear_extrude(thikness + eps) 
                 square(canvasD);
     }
+}
 
+module brackets(canvasD) {
     bracketD = [10,10,thikness];
     translate([0,0,thikness]) {
         left = (_1u*2-canvasD.x)/2-2*thikness;
